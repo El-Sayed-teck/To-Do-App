@@ -65,12 +65,16 @@ main{
   width: 320px;
   height: 30px;
   background: transparent;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
+  color: rgb(197, 206, 219);
+  font-size: 1.8rem;
   padding: 20px;
   border-radius: 10px;
   outline: none;
   border: none;
+}
+
+.user-input::placeholder {
+  color: rgb(197, 206, 219);
 }
 
 .task-container{
@@ -160,3 +164,4 @@ button{
   color: rgb(0, 255, 76);
 
 }
+
