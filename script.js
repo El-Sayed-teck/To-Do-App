@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
     taskArray.forEach((task) => createTasksEl(task));
   }
 
+  function markedTasks(tag, innerTag) {
+    tag.querySelector(innerTag).classList.toggle("completed-task");
+  }
+
   function createTasksEl(task) {
     const li = document.createElement("li");
     li.classList.add("task-item");
@@ -51,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
     appState();
 
     const okBtn = li.querySelector(".oK-btn");
-    okBtn.addEventListener("click", () => {
-      li.querySelector("span").classList.toggle("completed-task");
+    okBtn.addEventListener("click", (e) => {
+      markedTasks(li, "span");
     });
 
     const deleteBtn = li.querySelector(".delete-btn");
@@ -76,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       TaskId: taskId,
     };
     taskArray.push(newTask);
+
     storeTaskArray(taskArray);
     createTasksEl(newTask);
     userInput.value = "";
