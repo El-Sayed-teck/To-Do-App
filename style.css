@@ -48,10 +48,10 @@ main{
 }
 
 .input-container{
-  /* border: 1px solid white; */
+  
   border-bottom: 3px solid rgb(220, 235, 245);
   border-top: 3px solid rgb(220, 235, 245);
-  /* box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.33); */
+
   width: 400px;
   height: 100px;
   display: flex;
@@ -65,7 +65,7 @@ main{
   width: 320px;
   height: 30px;
   background: transparent;
-  color: rgb(197, 206, 219);
+  color:  rgb(255, 255, 255);
   font-size: 1.8rem;
   padding: 20px;
   border-radius: 10px;
@@ -74,7 +74,7 @@ main{
 }
 
 .user-input::placeholder {
-  color: rgb(197, 206, 219);
+  color:  rgb(255, 255, 255);
 }
 
 .task-container{
@@ -164,4 +164,5 @@ button{
   color: rgb(0, 255, 76);
 
 }
+
 
